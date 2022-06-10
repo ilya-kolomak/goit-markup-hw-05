@@ -41,7 +41,7 @@
     <section class="business_idea">
 		<div class="container">
 		<h1 class="idea-title">Эффективные решения для вашего бизнеса</h1>
-		<button type="button" class="btn">Заказать услугу</button>
+		<button type="button" class="btn" data-modal-open>Заказать услугу</button>
 		</div>
 	</section>
 	<section class="plan section">
@@ -92,9 +92,16 @@
 		<div class="container">
 		<h2 class="prise-title top-title">Чем мы занимаемся</h2>
 	<ul class="prise-list list">
-		<li> <img class="prise-image" src="./images/price1.jpg" width="370" alt="верстка сайта"></li>
-		<li> <img class="prise-image" src="./images/price2.jpg" width="370" alt="адаптивность сайта"></li>
-		<li> <img class="prise-image" src="./images/price3.jpg" width="370" alt="стилизация сайта"></li>
+		<li class="prise-item"> 
+			<img class="prise-image" src="./images/price1.jpg" width="370" alt="верстка сайта">
+		<p class="prise-text">Десктопные приложения</p>
+		</li>
+		<li class="prise-item"> <img class="prise-image" src="./images/price2.jpg" width="370" alt="адаптивность сайта">
+			<p class="prise-text">Мобильные приложения</p>
+		</li>
+		<li class="prise-item"> <img class="prise-image" src="./images/price3.jpg" width="370" alt="стилизация сайта">
+			<p class="prise-text">Дизайнерские решения</p>
+		</li>
 	</ul>
 </div>
 	</section>
@@ -360,7 +367,16 @@
 	
 	</div>
 </footer>
-
+<div class="backdrop is-hidden" data-modal>
+	<div class="modal">
+		<button type="button" class="modal-close-btn" data-modal-close>
+			<svg class="modal-btn" width="18" height="18">
+				<use href="./images/symbol-defs.svg#icon-close-black"	></use>
+			</svg>
+		</button>
+	</div>
+</div>
+<script src="./js/modal.js"></script>
 </body>
 
 
