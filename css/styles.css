@@ -186,7 +186,7 @@ letter-spacing: 0.02em;
   background-color:var(--aсcent-color);
   border-radius: 2px;
   left: 0;
-  bottom: -28px;
+  bottom: -32px;
 }
 
  
@@ -313,7 +313,9 @@ img{
 font-size: 14px;
 line-height: 1.15;
 text-align: center;
-padding-top: 27px;
+display:flex;
+justify-content:center;
+align-items: center;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 
